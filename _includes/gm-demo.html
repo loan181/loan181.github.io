@@ -2,15 +2,46 @@
 
 {% if game_path %}
   <h2>Demo</h2>
+  <button id="gm-play-btn" onclick="loadGame()" type="button" class="btn btn-primary btn-lg">
+    <i class="fa-solid fa-play"></i> <span>Try Demo</span>
+  </button>
 
-  <iframe
-    id="gm-game" width="640" height="480" scrolling="no" frameborder="0"
-    src="{{ game_path }}">
-  </iframe>
-  <p class="mute">
-    Note: This demo is a more recent adaptation to be embedded on the website.
-    Some features were removed to adapt with this format
-  </p>
+  <div id="gm-content-div" hidden>
+    <iframe
+      id="gm-game-iframe" scrolling="no" frameborder="0"
+      data-src="{{ game_path }}" src="about:blank">
+    </iframe>
+  </div>
+
+  {% comment %}
+  TODO: hide the info as long as the game didn't load.
+  {% endcomment %}
+
+  > This demo is a more recent adaptation to be embedded on the website.
+  Some features were removed to adapt with this format.
+  {: .prompt-info }
+
+  <script>
+    const gmContent = document.getElementById('gm-content-div');
+    const gmIframe = document.getElementById('gm-game-iframe');
+    const gmPlayButton = document.getElementById('gm-play-btn');
+    const gmPlayButtonIcn = document.querySelector('#gm-play-btn i');
+    const gmPlayButtonText = document.querySelector('#gm-play-btn span');
+
+    function loadGame() {
+      gmContent.removeAttribute('hidden');
+
+      gmIframe.width = 640;
+      gmIframe.height = 480;
+      gmIframe.src = gmIframe.dataset.src;
+
+      gmPlayButtonIcn.classList.remove('fa-play');
+      gmPlayButtonIcn.classList.add('fa-arrows-rotate');
+      gmPlayButtonText.innerText = 'Reset Demo';
+      gmPlayButton.classList.remove('btn-primary');
+      gmPlayButton.classList.add('btn-warning');
+    }
+  </script>
 
 {% else %}
   <p class="mute">No demo available for this game</p>
