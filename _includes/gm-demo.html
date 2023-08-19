@@ -1,0 +1,17 @@
+{% assign game_path = '/assets/gm-games/' | append: include.game-folder-name | append: '/html/index.html' %}
+
+{% if game_path %}
+  <h2>Demo</h2>
+
+  <iframe
+    id="gm-game" width="640" height="480" scrolling="no" frameborder="0"
+    src="{{ game_path }}">
+  </iframe>
+  <p class="mute">
+    Note: This demo is a more recent adaptation to be embedded on the website.
+    Some features were removed to adapt with this format
+  </p>
+
+{% else %}
+  <p class="mute">No demo available for this game</p>
+{% endif %}
