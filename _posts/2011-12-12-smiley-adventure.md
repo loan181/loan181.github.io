@@ -2,7 +2,7 @@
 title:  "Smiley's Adventure"
 date:   2011-12-12
 categories: [Project, GameMaker]
-tags: [gamemaker, demo, smiley-adventure, fun, video-game]
+tags: [gamemaker, video game, demo, maze, adventure, fun, smiley-adventure]
 image: /assets/img-preview/gm-1.jpg
 ---
 
