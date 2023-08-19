@@ -11,7 +11,7 @@ Navigate the dangerous maze with the smiley face to try to reach the green flag
 
 {% include gm-demo.html game-folder-name="1-smiley-adventure" %}
 
-The inspiration for it came from a random Game Maker tutorial on YouTube that I look the first 2 minutes.
+The inspiration for it came from a random Game Maker tutorial on YouTube that I watched the first 2 minutes.
 As you will see with the different project that I did, my infographics skills are pretty bad,
 as such, most of the pictures were found on internet.
 My lack of experience with the software also explains why most picture have strange white borders and strange animations.
