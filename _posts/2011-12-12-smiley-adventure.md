@@ -2,16 +2,16 @@
 title:  "Smiley's Adventure"
 date:   2011-12-12
 categories: [Project, GameMaker]
-tags: [gamemaker, demo, smiley-adventure]
+tags: [gamemaker, demo, smiley-adventure, fun, video-game]
 image: /assets/img-preview/gm-1.jpg
 ---
 
+My very first step in programming, "Smiley's Adventure" is the first game that I did realise using Game Maker!
+Navigate the dangerous maze with the smiley face to try to reach the green flag
+
 {% include gm-demo.html game-folder-name="1-smiley-adventure" %}
 
-My very first step in programming!
-"Smiley\'s Adventure" is the first game that I did realised using Game Maker,
-the inspiration for it came from a random Game Maker tutorial on YouTube that I look the first 2 minutes.
-
+The inspiration for it came from a random Game Maker tutorial on YouTube that I look the first 2 minutes.
 As you will see with the different project that I did, my infographics skills are pretty bad,
 as such, most of the pictures were found on internet.
 My lack of experience with the software also explains why most picture have strange white borders and strange animations.
@@ -31,3 +31,4 @@ For instance; the fake walls which destroy on collision, having another object m
 
 In a nutshell, this game is not extraordinary, but have the privilege of being my very first real programming experience,
 guiding me to what would become my biggest passion in life even until now!
+
