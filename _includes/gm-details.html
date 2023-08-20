@@ -4,17 +4,19 @@
 
 {% if game_info.controls %}
   <h2 id="title-controls">Controls</h2>
-
-  {%- for control in game_info.controls -%}
-    <dl>
-      {% assign splitted_control = control | split: " -> " %}
-      {% for elem in splitted_control %}
-        {% if forloop.first %}
-          <dt>{{ elem }}</dt>
-        {% else %}
-          <dd>{{ elem }}</dd>
-        {% endif %}
-      {% endfor %}
-    </dl>
-  {%- endfor -%}
+  <details>
+    <summary>Control Details</summary>
+    {%- for control in game_info.controls -%}
+      <dl>
+        {% assign splitted_control = control | split: " -> " %}
+        {% for elem in splitted_control %}
+          {% if forloop.first %}
+            <dt>{{ elem }}</dt>
+          {% else %}
+            <dd>{{ elem }}</dd>
+          {% endif %}
+        {% endfor %}
+      </dl>
+    {%- endfor -%}
+  </details>
 {% endif %}
