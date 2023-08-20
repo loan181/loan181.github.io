@@ -3,7 +3,7 @@
 {% assign game_path = '/assets/gm-games/' | append: game_info.folder-name | append: '/html/index.html' %}
 
 {% if game_path %}
-  <h2>Demo</h2>
+  <h2 id="title-demo">Demo</h2>
   <button id="gm-play-btn" onclick="loadGame()" type="button" class="btn btn-primary btn-lg">
     <i class="fa-solid fa-play"></i> <span>Try Demo</span>
   </button>
