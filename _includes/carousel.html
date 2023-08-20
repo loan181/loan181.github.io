@@ -4,8 +4,6 @@
 {% assign gm_screens_len = gm_info.pictures.size %}
 {% assign gm_screens_len_dec = gm_screens_len | minus: 1 %}
 
-<h1>{{ gm_screens_len }}</h1>
-
 <div id="carousel-gm-screens" class="carousel slide">
   <div class="carousel-indicators">
     {% for i in (0..gm_screens_len_dec) %}
