@@ -4,23 +4,14 @@ date: 2011-12-15
 categories: [Project, GameMaker]
 tags: [gamemaker, video game, cancelled]
 image: /assets/img-preview/gm-2.jpg
-docs:
-
-- title: Introduction
-  url: introduction.html
-
-- title: Configuration
-  url: configuration.html
-
-- title: Deployment
-  url: deployment.html
+gm-game-idx: 2
 ---
 
 After the enthusiasm of finishing the first game,
 I thought I was good enough to attempt a bigger much more ambitious project;
 my first MMORPG project!
 
-{% include carousel.html game-idx=2 %}
+{% include carousel.html %}
 
 
 Little did I know that even today with all the experience that I have,

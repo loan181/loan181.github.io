@@ -1,4 +1,4 @@
-{% assign idx = include.game-idx | minus: 1 %}
+{% assign idx = page.gm-game-idx | minus: 1 %}
 {% assign game_info = site.data.gm-data[idx] %}
 {% assign game_path = '/assets/gm-games/' | append: game_info.folder-name | append: '/html/index.html' %}
 
