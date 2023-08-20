@@ -12,6 +12,8 @@ Navigate the dangerous maze with the smiley face to try to reach the green flag
 
 {% include gm-demo.html %}
 
+{% include gm-details.html %}
+
 The inspiration for it came from a random Game Maker tutorial on YouTube that I watched the first 2 minutes.
 As you will see with the different project that I did, my infographics skills are pretty bad,
 as such, most of the pictures were found on internet.

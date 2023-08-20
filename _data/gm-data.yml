@@ -1,5 +1,8 @@
 # 1 - Smiley Adventure
 - folder-name: 1-smiley-adventure
+  controls:
+    - mouse -> Navigate in the menu
+    - arrow keys -> Move the character
 
 # 2 - Dungeon and dragons
 - folder-name: 2-dungeon-and-dragon

@@ -1,0 +1,20 @@
+{% assign idx = page.gm-game-idx | minus: 1 %}
+{% assign game_info = site.data.gm-data[idx] %}
+
+
+{% if game_info.controls %}
+  <h2>Controls</h2>
+
+  {%- for control in game_info.controls -%}
+    <dl>
+      {% assign splitted_control = control | split: " -> " %}
+      {% for elem in splitted_control %}
+        {% if forloop.first %}
+          <dt>{{ elem }}</dt>
+        {% else %}
+          <dd>{{ elem }}</dd>
+        {% endif %}
+      {% endfor %}
+    </dl>
+  {%- endfor -%}
+{% endif %}
