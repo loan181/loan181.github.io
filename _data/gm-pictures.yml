@@ -1,0 +1,41 @@
+# 1 - Smiley Adventure
+- pictures:
+
+# 2 - Dungeon and dragons
+- folder-name: 2-dungeon-and-dragon
+  pictures:
+  - file:           screen1.png
+    caption-title:  title screen
+    caption-desc:   First screen of the game. The picture is a photo of the D&D board game
+  - file:           screen2.png
+    caption-title:  first cinematic screen
+    caption-desc:   funnily enough, I will re-use most of the cinematic pictures for a future game
+  - file:           screen3.png
+    caption-title:  second cinematic screen
+    caption-desc:   >
+      I really loved this picture at the time. It also looks like I took inspiration from the famous french audio
+      serie "Le Donjon de Naheulbeuk" as "Gzor's Castle" is the most dangerous place in this universe
+  - file:           screen4.png
+    caption-title:  third cinematic screen
+  - file:           screen5.png
+    caption-title:  fourth cinematic screen
+  - file:           screen6.png
+    caption-title:  Gameplay 1
+    caption-desc:   An empty green field of grass with the castle wall in front
+  - file:           screen7.png
+    caption-title:  Gameplay 2
+    caption-desc:   The character move with the same control as the previous game
+  - file:           screen8.png
+    caption-title:  Gameplay 3
+    caption-desc:   Not much to do except hiding behind the castle "door"
+
+# 3 -
+- pictures:
+
+# 4 -
+- folder-name: 2-dungeon-and-dragon
+  pictures:
+    - file:    aaaaa
+      caption: AAAAA
+    - file:    screen2.png
+      caption: first cinematic screen

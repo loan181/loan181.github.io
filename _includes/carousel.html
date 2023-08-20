@@ -1,0 +1,46 @@
+
+{% assign idx = include.game-idx | minus: 1 %}
+{% assign gm_info = site.data.gm-pictures[idx] %}
+{% assign gm_screens_len = gm_info.pictures.size %}
+{% assign gm_screens_len_dec = gm_screens_len | minus: 1 %}
+
+<h1>{{ gm_screens_len }}</h1>
+
+<div id="carousel-gm-screens" class="carousel slide">
+  <div class="carousel-indicators">
+    {% for i in (0..gm_screens_len_dec) %}
+      <button type="button" data-bs-target="#carousel-gm-screens" data-bs-slide-to="{{ i }}" aria-label="Slide {{ i }}"
+        {% if forloop.first == true %}
+          class="active" aria-current="true"
+        {% endif %}
+      >
+      </button>
+    {% endfor %}
+  </div>
+  <div class="carousel-inner">
+    {% for picture_info in gm_info.pictures %}
+      {% if forloop.first == true %}
+      <div class="carousel-item active">
+      {% else %}
+      <div class="carousel-item">
+      {% endif %}
+        {% comment %}TODO: find a way to show the caption in the magnify pop-up,see:
+        https://dimsemenov.com/plugins/magnific-popup/documentation.html#:~:text=%7D%0A%20%20%7D%0A%7D)%3B-,Image%20Type,-The%20path%20to
+        {% endcomment %}
+        <img src="/assets/gm-games/{{ gm_info.folder-name }}/screens/{{ picture_info.file }}" class="d-block w-100" alt="{{ picture_info.caption }}">
+        <div class="carousel-caption d-none d-md-block" style="text-shadow:-1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;">
+          <h4 class="text-white" style="text-transform:capitalize;">{{ picture_info.caption-title }}</h4>
+          <p>{{ picture_info.caption-desc }}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carousel-gm-screens" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carousel-gm-screens" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
