@@ -32,8 +32,19 @@
     caption-title:  Gameplay 3
     caption-desc:   Not much to do except hiding behind the castle "door"
 
-# 3 -
+# 3 - Zelda 3
 - folder-name: 3-zelda-3
+  controls:
+    - <i class="fa-regular fa-keyboard"></i> Arrow Keys -> Move the character
+    - <i class="fa-regular fa-keyboard"></i> Z -> Shield (protect from projectile)
+    - <i class="fa-regular fa-keyboard"></i> E -> Bow
+    - <i class="fa-regular fa-keyboard"></i> E -> Hammer (does not work)
+    - <i class="fa-regular fa-keyboard"></i> X -> Bomb
+    - <i class="fa-regular fa-keyboard"></i> V -> Jump/Fly (does not work)
+    - <i class="fa-regular fa-keyboard"></i> B -> Boomerang
+    - <i class="fa-regular fa-keyboard"></i> Enter -> Open the Menu, but you can't escape it
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) -> Allow to interact with certain object (Menu's buttons)
+
 
 # 4 -
 - folder-name:
