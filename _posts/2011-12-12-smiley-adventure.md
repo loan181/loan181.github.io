@@ -9,7 +9,7 @@ image: /assets/img-preview/gm-1.jpg
 My very first step in programming, "Smiley's Adventure" is the first game that I did realise using Game Maker!
 Navigate the dangerous maze with the smiley face to try to reach the green flag
 
-{% include gm-demo.html game-folder-name="1-smiley-adventure" %}
+{% include gm-demo.html game-idx=1 game-folder-name="1-smiley-adventure" %}
 
 The inspiration for it came from a random Game Maker tutorial on YouTube that I watched the first 2 minutes.
 As you will see with the different project that I did, my infographics skills are pretty bad,

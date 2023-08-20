@@ -1,5 +1,5 @@
 # 1 - Smiley Adventure
-- pictures:
+- folder-name: 1-smiley-adventure
 
 # 2 - Dungeon and dragons
 - folder-name: 2-dungeon-and-dragon
@@ -33,9 +33,5 @@
 - pictures:
 
 # 4 -
-- folder-name: 2-dungeon-and-dragon
-  pictures:
-    - file:    aaaaa
-      caption: AAAAA
-    - file:    screen2.png
-      caption: first cinematic screen
+- folder-name:
+
