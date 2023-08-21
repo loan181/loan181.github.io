@@ -45,7 +45,10 @@
     - <i class="fa-regular fa-keyboard"></i> Enter -> Open the Menu, but you can't escape it
     - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) -> Allow to interact with certain object (Menu's buttons)
 
-
-# 4 -
-- folder-name:
+# 4 - Ninja Attack
+- folder-name: 4-ninja-attack
+  controls:
+    - <i class="fa-regular fa-keyboard"></i> Arrow Keys -> Move the character and jump
+    - <i class="fa-regular fa-keyboard"></i> Space -> Punch
+    - <i class="fa-regular fa-keyboard"></i> Enter -> Start the game (on menu)
 
