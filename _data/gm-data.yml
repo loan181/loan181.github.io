@@ -52,3 +52,9 @@
     - <i class="fa-regular fa-keyboard"></i> Space -> Punch
     - <i class="fa-regular fa-keyboard"></i> Enter -> Start the game (on menu)
 
+# 5 - Catan
+- folder-name: 5-catan
+  controls:
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) -> Interact with the button to throw the dice
+
+
