@@ -2,7 +2,7 @@
 title: Zelda 3
 date: 2012-03-31
 categories: [Project, GameMaker]
-tags: [gamemaker, video game, cancelled, ninja, platformer]
+tags: [gamemaker, video game, cancelled, demo, ninja, platformer]
 image: /assets/img-preview/gm-4.jpg
 gm-game-idx: 4
 ---
