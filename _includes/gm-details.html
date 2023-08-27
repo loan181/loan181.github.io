@@ -1,7 +1,14 @@
 {% assign idx = page.gm-game-idx | minus: 1 %}
 {% assign game_info = site.data.gm-data[idx] %}
 
+{% comment %} Demo section {% endcomment %}
+{% assign game_path = '/assets/gm-games/' | append: game_info.folder-name | append: '/html/index.html' %}
+{% if game_path.size > 0 %}
+  <h2 id="title-demo">Demo</h2>
+  {% include gm-demo.html %}
+{% endif %}
 
+{% comment %} Controls section {% endcomment %}
 {% if game_info.controls %}
   <h2 id="title-controls">Controls</h2>
   <details>
@@ -21,4 +28,15 @@
   </details>
 {% endif %}
 
-<h2 id="title-trivias">Trivias</h2>
+{% comment %} Galery section {% endcomment %}
+{% if game_info.pictures %}
+  <h2>Gallery</h2>
+  {% assign gm_info = game_info %}
+  {% assign gm_screens_len = gm_info.pictures.size %}
+  {% assign gm_screens_len_dec = gm_screens_len | minus: 1 %}
+
+  {% include carousel.html %}
+{% endif %}
+
+{% comment %} Trivia section {% endcomment %}
+<h2 id="title-trivias">Trivia</h2>

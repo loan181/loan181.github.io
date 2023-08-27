@@ -1,9 +1,3 @@
-
-{% assign idx = page.gm-game-idx | minus: 1 %}
-{% assign gm_info = site.data.gm-data[idx] %}
-{% assign gm_screens_len = gm_info.pictures.size %}
-{% assign gm_screens_len_dec = gm_screens_len | minus: 1 %}
-
 <div id="carousel-gm-screens" class="carousel slide">
   <div class="carousel-indicators">
     {% for i in (0..gm_screens_len_dec) %}

@@ -1,53 +1,44 @@
-{% assign idx = page.gm-game-idx | minus: 1 %}
-{% assign game_info = site.data.gm-data[idx] %}
-{% assign game_path = '/assets/gm-games/' | append: game_info.folder-name | append: '/html/index.html' %}
 
-{% if game_path %}
-  <h2 id="title-demo">Demo</h2>
-  <button id="gm-play-btn" onclick="loadGame()" type="button" class="btn btn-primary btn-lg">
-    <i class="fa-solid fa-play"></i> <span>Try Demo</span>
-  </button>
-  <a id="gm-play-dedicated-btn" role="button" class="btn btn-secondary btn-lg" href="{{ game_path }}" target="_blank">
-    <i class="fa-solid fa-up-right-from-square"></i> Play in dedicated window
-  </a>
+<button id="gm-play-btn" onclick="loadGame()" type="button" class="btn btn-primary btn-lg">
+  <i class="fa-solid fa-play"></i> <span>Try Demo</span>
+</button>
+<a id="gm-play-dedicated-btn" role="button" class="btn btn-secondary btn-lg" href="{{ game_path }}" target="_blank">
+  <i class="fa-solid fa-up-right-from-square"></i> Play in dedicated window
+</a>
 
-  <div id="gm-content-div" hidden>
-    <iframe
-      id="gm-game-iframe" scrolling="no" frameborder="0"
-      data-src="{{ game_path }}" src="about:blank">
-    </iframe>
-  </div>
+<div id="gm-content-div" hidden>
+  <iframe
+    id="gm-game-iframe" scrolling="no" frameborder="0"
+    data-src="{{ game_path }}" src="about:blank">
+  </iframe>
+</div>
 
-  {% comment %}
-  TODO: hide the info as long as the game didn't load.
-  {% endcomment %}
+{% comment %}
+TODO: hide the info as long as the game didn't load.
+{% endcomment %}
 
-  > This demo is a more recent adaptation to be embedded on the website.
-  Some features were removed to adapt with this format.
-  {: .prompt-info }
+> This demo is a more recent adaptation to be embedded on the website.
+Some features were removed to adapt with this format.
+{: .prompt-info }
 
-  <script>
-    const gmContent = document.getElementById('gm-content-div');
-    const gmIframe = document.getElementById('gm-game-iframe');
-    const gmPlayButton = document.getElementById('gm-play-btn');
-    const gmPlayButtonIcn = document.querySelector('#gm-play-btn i');
-    const gmPlayButtonText = document.querySelector('#gm-play-btn span');
+<script>
+  const gmContent = document.getElementById('gm-content-div');
+  const gmIframe = document.getElementById('gm-game-iframe');
+  const gmPlayButton = document.getElementById('gm-play-btn');
+  const gmPlayButtonIcn = document.querySelector('#gm-play-btn i');
+  const gmPlayButtonText = document.querySelector('#gm-play-btn span');
 
-    function loadGame() {
-      gmContent.removeAttribute('hidden');
+  function loadGame() {
+    gmContent.removeAttribute('hidden');
 
-      gmIframe.width = {{ include.width | default: 640 }};
-      gmIframe.height = {{ include.height | default: 480 }};
-      gmIframe.src = gmIframe.dataset.src;
+    gmIframe.width = {{ include.width | default: 640 }};
+    gmIframe.height = {{ include.height | default: 480 }};
+    gmIframe.src = gmIframe.dataset.src;
 
-      gmPlayButtonIcn.classList.remove('fa-play');
-      gmPlayButtonIcn.classList.add('fa-arrows-rotate');
-      gmPlayButtonText.innerText = 'Reset Demo';
-      gmPlayButton.classList.remove('btn-primary');
-      gmPlayButton.classList.add('btn-warning');
-    }
-  </script>
-
-{% else %}
-  <p class="mute">No demo available for this game</p>
-{% endif %}
+    gmPlayButtonIcn.classList.remove('fa-play');
+    gmPlayButtonIcn.classList.add('fa-arrows-rotate');
+    gmPlayButtonText.innerText = 'Reset Demo';
+    gmPlayButton.classList.remove('btn-primary');
+    gmPlayButton.classList.add('btn-warning');
+  }
+</script>

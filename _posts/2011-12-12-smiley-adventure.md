@@ -10,8 +10,6 @@ gm-game-idx: 1
 My very first step in programming, "Smiley's Adventure" is the first game that I did realise using Game Maker!
 Navigate the dangerous maze with the smiley face to try to reach the green flag
 
-{% include gm-demo.html %}
-
 {% include gm-details.html %}
 
 The inspiration for it came from a random Game Maker tutorial on YouTube that I watched the first 2 minutes.

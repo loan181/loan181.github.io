@@ -10,8 +10,6 @@ gm-game-idx: 4
 After the failure of the previous Zelda projects, I was willing to do something simpler like a platformer game!
 Unfortunately for me, the physic in this kind of game is not easy to implement.
 
-{% include gm-demo.html %}
-
 {% include gm-details.html %}
 
 The physic in this game is terrible to say the least, just trying to reach the top floor is a challenge in itself.

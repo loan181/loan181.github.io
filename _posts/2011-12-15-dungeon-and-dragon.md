@@ -11,8 +11,7 @@ After the enthusiasm of finishing the first game,
 I thought I was good enough to attempt a bigger much more ambitious project;
 my first MMORPG project!
 
-{% include carousel.html %}
-
+{% include gm-details.html %}
 
 Little did I know that even today with all the experience that I have,
 this kind of idea would take me years to develop.
