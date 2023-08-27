@@ -76,9 +76,9 @@ Whenever an image is added to the page, it automatically add the magnifying pop-
   }
 
   defer(function () {
-    $('.gm-gallery').each(function() { // the containers for all your galleries
+    $('.gm-gallery').each(function() {
       $(this).magnificPopup({
-        delegate: '.gallery-item', // the selector for gallery item
+        delegate: '.gallery-item',
         type: 'image',
         gallery: {
           enabled: true
