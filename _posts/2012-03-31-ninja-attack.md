@@ -1,5 +1,5 @@
 ---
-title: Zelda 3
+title: Ninja Attack
 date: 2012-03-31
 categories: [Project, GameMaker]
 tags: [gamemaker, video game, cancelled, demo, ninja, platformer]
