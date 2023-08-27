@@ -3,7 +3,8 @@
 
 {% comment %} Demo section {% endcomment %}
 {% assign game_path = '/assets/gm-games/' | append: game_info.folder-name | append: '/html/index.html' %}
-{% if game_path.size > 0 %}
+{% capture game_path_exists %}{% file_exists {{ game_path }} %}{% endcapture %}
+{% if game_path_exists == "true" %}
   <h2 id="title-demo">Demo</h2>
   {% include gm-demo.html %}
 {% endif %}
