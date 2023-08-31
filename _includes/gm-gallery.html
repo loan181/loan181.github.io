@@ -2,7 +2,7 @@
 <div id="gm-gallery" class="row row-cols-1 row-cols-md-2 g-4">
   {% for picture_info in gm_info.pictures %}
     <div class="col">
-      <div class="card text-bg-dark" style="max-width: 24rem;">
+      <div class="card post-preview" style="max-width: 24rem;">
         <img
           class="card-img-top gallery-item ratio ratio-16x9"
           src="/assets/gm-games/{{ gm_info.folder-name }}/screens/{{ picture_info.file }}"
