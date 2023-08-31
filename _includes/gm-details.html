@@ -31,13 +31,13 @@
 
 {% comment %} Galery section {% endcomment %}
 {% if game_info.pictures %}
-  <h2>Gallery</h2>
+  <h2 id="title-gallery">Gallery</h2>
   {% assign gm_info = game_info %}
   {% assign gm_screens_len = gm_info.pictures.size %}
   {% assign gm_screens_len_dec = gm_screens_len | minus: 1 %}
 
-  {% include carousel.html %}
+  {% include gm-gallery.html %}
 {% endif %}
 
 {% comment %} Trivia section {% endcomment %}
-<h2 id="title-trivias">Trivia</h2>
+<h2 id="title-trivia">Trivia</h2>

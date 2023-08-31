@@ -1,0 +1,59 @@
+
+<div id="gm-gallery" class="row row-cols-1 row-cols-md-2 g-4">
+  {% for picture_info in gm_info.pictures %}
+    <div class="col">
+      <div class="card text-bg-dark" style="max-width: 24rem;">
+        <img
+          class="card-img-top gallery-item ratio ratio-16x9"
+          src="/assets/gm-games/{{ gm_info.folder-name }}/screens/{{ picture_info.file }}"
+          alt="{{ picture_info.caption-title | escape | capitalize }}"
+          data-img-title="{{ picture_info.caption-title | escape | capitalize }}"
+          data-img-desc="{{ picture_info.caption-desc | escape | capitalize }}"
+        >
+        <div class="card-body">
+          <h5 class="card-title" style="margin-top: 0; margin-bottom: 0; font-size:1.5rem;text-transform: capitalize;">{{ picture_info.caption-title }}</h5>
+          <p class="card-text">{{ picture_info.caption-desc | escape | capitalize }}</p>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+
+<script>
+  function defer(method) {
+    if (window.jQuery) {
+      method();
+    } else {
+      setTimeout(function() { defer(method) }, 500);
+    }
+  }
+
+  defer(function () {
+    // Remove existing zoom pop up listener for gallery items
+    $('.popup.gallery-item').off("click");
+    // TODO: this part only work as we wait for jquery for super long (as sure we can be pretty sure that magnificPopup
+    //  is already initiated. But it's possible that it will not init yet and our code will load before.
+    //  In this case the default behavior if chirpy will override our change.
+
+    // Add my custom gallery listener
+    $('#gm-gallery').magnificPopup({
+      delegate: '.gallery-item',
+      type: 'image',
+      gallery: {
+        enabled: true
+      },
+      zoom: {
+        enabled: true,
+        duration: 300,
+        easing: 'ease-in-out'
+      },
+      image: {
+        titleSrc: function (item) {
+          const itemEl = item.el.children(":first");
+          return `<span style="text-transform:capitalize;">${itemEl.data("img-title")}</span><small>${itemEl.data("img-desc")}</small>`;
+        },
+      }
+    });
+  });
+</script>
