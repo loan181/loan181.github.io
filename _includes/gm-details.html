@@ -12,7 +12,7 @@
 {% comment %} Controls section {% endcomment %}
 {% if game_info.controls %}
   <h2 id="title-controls">Controls</h2>
-  <details>
+  <details> {% comment %} TODO: use bootstrap "collapse" system instead ? {% endcomment %}
     <summary>Control Details</summary>
     {%- for control in game_info.controls -%}
       <dl>

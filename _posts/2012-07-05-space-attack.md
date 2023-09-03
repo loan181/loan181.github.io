@@ -2,7 +2,7 @@
 title: Space Attack
 date: 2012-07-05
 categories: [Project, GameMaker]
-tags: [gamemaker, video game, cancelled, demo, space]
+tags: [gamemaker, video game, cancelled, demo, space, arcade]
 image: /assets/img-preview/gm-7.jpg
 gm-game-idx: 7
 ---
@@ -18,6 +18,8 @@ The game itself is pretty hard to play and not super enjoyable,
 but is well advanced compared to the previous one we saw.
 
 Your spaceship have some health point, it will start to smoke in red when hurt then explode.
+The health point shield energy and score is unfortunately not visible in the website demo
+as in the main game it was shown in the window frame itself.
 
 There is 3 different kind of enemies, each having different health points and behavior.
 None of them moved, but 2 of them will shoot projectiles.
@@ -41,4 +43,4 @@ There is a bug that I never fixed:
 while in game, press `Escape` and the spaceship will stay on screen in the menu and if you launch the game back.
 You can also have 2 red spaceship if you play in 2 Player mode.
 
-There is also left-over in the code for an extra 3rd player which was never implemented.
+There is also left-over picture for an extra 3rd and 4th player (green and yellow) which was never implemented.
