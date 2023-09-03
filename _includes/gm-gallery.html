@@ -1,5 +1,8 @@
 
-<div id="gm-gallery" class="row row-cols-1 row-cols-md-2 g-4">
+<button class="btn btn-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#gm-gallery" aria-expanded="false" aria-controls="gm-gallery">
+  <i class="fa-solid fa-eye-slash"></i> Toggle gallery
+</button>
+<div id="gm-gallery" class="row row-cols-1 row-cols-md-2 g-4 collapse show">
   {% for picture_info in gm_info.pictures %}
     <div class="col">
       <div class="card post-preview" style="max-width: 24rem;">
@@ -30,11 +33,12 @@
   }
 
   defer(function () {
-    // Remove existing zoom pop up listener for gallery items
+    /* Remove existing zoom pop up listener for gallery items */
     $('.popup.gallery-item').off("click");
-    // TODO: this part only work as we wait for jquery for super long (as sure we can be pretty sure that magnificPopup
-    //  is already initiated. But it's possible that it will not init yet and our code will load before.
-    //  In this case the default behavior if chirpy will override our change.
+    /* TODO: this part only work as we wait for jquery for super long (as sure we can be pretty sure that magnificPopup
+    /*  is already initiated. But it's possible that it will not init yet and our code will load before.
+    /*  In this case the default behavior if chirpy will override our change
+     */
 
     // Add my custom gallery listener
     $('#gm-gallery').magnificPopup({
