@@ -62,4 +62,12 @@
   controls:
     - TODO
 
+# 7 - Space Attack
+- folder-name: 7-space-attack
+  controls:
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) -> Interact with the button in the menu
+    - <i class="fa-regular fa-keyboard"></i> Left/Right Arrow Keys -> Move the spaceship horizontally
+    - <i class="fa-regular fa-keyboard"></i> Space -> Shoot lasers
+    - <i class="fa-regular fa-keyboard"></i> Enter -> Activate the shield (will reflect enemy projectiles)
+
 
