@@ -38,7 +38,7 @@
     - <i class="fa-regular fa-keyboard"></i> Arrow Keys -> Move the character
     - <i class="fa-regular fa-keyboard"></i> Z -> Shield (protect from projectile)
     - <i class="fa-regular fa-keyboard"></i> E -> Bow
-    - <i class="fa-regular fa-keyboard"></i> E -> Hammer (does not work)
+    - <i class="fa-regular fa-keyboard"></i> M -> Hammer (does not work)
     - <i class="fa-regular fa-keyboard"></i> X -> Bomb
     - <i class="fa-regular fa-keyboard"></i> V -> Jump/Fly (does not work)
     - <i class="fa-regular fa-keyboard"></i> B -> Boomerang
@@ -60,7 +60,18 @@
 # 6 - Zelda 3.2
 - folder-name: 6-zelda-3-2
   controls:
-    - TODO
+    - <i class="fa-regular fa-keyboard"></i> Arrow Keys -> Move the character
+    - <i class="fa-regular fa-keyboard"></i> Z -> Shield (protect from projectile)
+    - <i class="fa-regular fa-keyboard"></i> E -> Bow
+    - <i class="fa-regular fa-keyboard"></i> M -> Hammer (does not damage enemies)
+    - <i class="fa-regular fa-keyboard"></i> X -> Bomb
+    - <i class="fa-regular fa-keyboard"></i> V -> Jump/Fly (does not work)
+    - <i class="fa-regular fa-keyboard"></i> B -> Boomerang
+    - <i class="fa-regular fa-keyboard"></i> N -> Basic Magic Spell
+    - <i class="fa-regular fa-keyboard"></i> F -> Fire Magic Ball
+    - <i class="fa-regular fa-keyboard"></i> G -> Ice Magic Ball
+    - <i class="fa-regular fa-keyboard"></i> H -> Hookshot (won't interact with objects)
+
 
 # 7 - Space Attack
 - folder-name: 7-space-attack
