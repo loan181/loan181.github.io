@@ -11,8 +11,10 @@
 
 {% comment %} Controls section {% endcomment %}
 {% if game_info.controls %}
-  <h2 id="title-controls">Controls</h2>
-  <details> {% comment %} TODO: use bootstrap "collapse" system instead ? {% endcomment %}
+  <h2 id="title-controls">Controls <a class="text-muted anchor" data-bs-toggle="collapse" href="#control-details" role="button" aria-expanded="false" aria-controls="control-details">
+    <i class="fa-solid fa-eye-slash"></i>
+  </a></h2>
+  <div id="control-details" class="collapse">
     <summary>Control Details</summary>
     {%- for control in game_info.controls -%}
       <dl>
@@ -26,15 +28,20 @@
         {% endfor %}
       </dl>
     {%- endfor -%}
-  </details>
+  </div>
 {% endif %}
 
 {% comment %} Galery section {% endcomment %}
 {% if game_info.pictures %}
-  <h2 id="title-gallery">Gallery</h2>
+  <h2 id="title-gallery">Gallery
+    <a class="text-muted anchor" data-bs-toggle="collapse" href="#gm-gallery" role="button" aria-expanded="true" aria-controls="gm-gallery">
+     <i class="fa-solid fa-eye-slash"></i>
+    </a>
+  </h2>
   {% assign gm_info = game_info %}
   {% assign gm_screens_len = gm_info.pictures.size %}
   {% assign gm_screens_len_dec = gm_screens_len | minus: 1 %}
+
 
   {% include gm-gallery.html %}
 {% endif %}
