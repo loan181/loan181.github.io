@@ -8,7 +8,7 @@ gm-game-idx: 7
 ---
 
 After once more cancelling the Zelda project, I decided to find an easier project.
-I hesitated between a Pac-Man or Space Invader, as I had bad memories of Pac-Man coding in
+I hesitated between a Pac-Man or Space Invader, as I had bad memories of Pac-Man coding in 
 [Smiley Adventure]({% post_url 2011-12-12-smiley-adventure %}) I decided to go with
 a variant of space invader.
 

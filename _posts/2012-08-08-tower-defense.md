@@ -7,8 +7,8 @@ image: /assets/img-preview/gm-8.jpg
 gm-game-idx: 8
 ---
 
-Trying myself in a new game genre with the tower-defence one.
-It will the last Game Maker project that I cancel.
+Trying myself in a new game genre with the tower-defense one.
+It will be the last Game Maker project that I canceled. Once again, too complicated.
 
 {% include gm-details.html %}
 

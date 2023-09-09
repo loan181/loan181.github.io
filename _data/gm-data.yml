@@ -82,5 +82,32 @@
     - <i class="fa-regular fa-keyboard"></i> Enter -> Activate the shield (will reflect enemy projectiles)
 
 # 8 - Tower Defense
+- folder-name: 8-tower-defense
+  pictures:
+    - file: start.jpg
+      caption-title: Game starting
+    - file: start-2.jpg
+      caption-title: Game after a few seconds
+    - file: unused.jpg
+      caption-title: Unused sprites
+      caption-desc: Unused sprites of towers and their ammunition
 
 # 9 - Platform
+- folder-name: 9-platform
+  controls:
+    - <i class="fa-regular fa-keyboard"></i> Left/Right Arrow Keys -> Move the player horizontally
+    - <i class="fa-regular fa-keyboard"></i> Up -> Jump (or double jump)
+    - <i class="fa-regular fa-keyboard"></i> Enter -> (Debug) Move to the next level
+  pictures:
+    - file: level-1.jpg
+      caption-title: Level 1 Map
+    - file: level-2.jpg
+      caption-title: Level 2 Map
+    - file: level-3.jpg
+      caption-title: Level 3 Map
+    - file: level-4.jpg
+      caption-title: Level 4 Map
+    - file: level-5.jpg
+      caption-title: Level 5 Map
+    - file: level-6.jpg
+      caption-title: Level 6 Map
