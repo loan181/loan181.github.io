@@ -111,3 +111,27 @@
       caption-title: Level 5 Map
     - file: level-6.jpg
       caption-title: Level 6 Map
+
+# 10 - Killbox
+- folder-name: 10-killbox
+  pictures:
+    - file: menu.jpg
+      caption-title: Opening Menu
+    - file: gameplay0.jpg
+      caption-title: Gameplay 0
+    - file: gameplay1.jpg
+      caption-title: Gameplay 1
+    - file: gameplay2.jpg
+      caption-title: Gameplay 2
+    - file: gameplay3.jpg
+      caption-title: Gameplay 3
+    - file: gameplay4.jpg
+      caption-title: Gameplay 4
+    - file: control-choice.jpg
+      caption-title: Pop-up of controls
+      caption-desc: Choice to play with the keyboard, the mouse or both at the same time (with 2 players)
+    - file: 2P-mode.jpg
+      caption-title: 2 Players Mode
+    - file: score.jpg
+      caption-title: Score Board
+      caption-desc: Score board which allow to enter your name if you get an high score
