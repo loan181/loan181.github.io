@@ -135,3 +135,7 @@
     - file: score.jpg
       caption-title: Score Board
       caption-desc: Score board which allow to enter your name if you get an high score
+
+# 11 - Avoid
+- folder-name: 11-avoid
+
