@@ -141,3 +141,25 @@
 
 # 12 - Super Snake
 - folder-name: 12-super-snake
+  pictures:
+    - file: menu.jpg
+      caption-title: Opening Menu
+    - file: option.jpg
+      caption-title: Options
+      caption-desc: You can change the amount of missiles, color of the snake and if you want to wrap around the screen
+    - file: scores.jpg
+      caption-title: Score-board
+    - file: gameplay1.jpg
+      caption-title: Gameplay 1
+    - file: gameplay2.jpg
+      caption-title: Gameplay 2
+      caption-desc: Wall can randomly spawn
+    - file: gameplay3.jpg
+      caption-title: Gameplay 3
+      caption-desc: Walls can be destroyed with missiles granting 200 points
+    - file: gameplay5.jpg
+      caption-title: Gameplay 4
+      caption-desc: Star power up grants you invincibility. This last the time of the green bar above
+    - file: game-over.jpg
+      caption-title: Game Over screen
+
