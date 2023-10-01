@@ -20,6 +20,19 @@ This have been added to be possible to play the game on a mobile
 Although it's simplicity, there is actually a lot of complexity in this game which started
 to use more advanced programming concepts.
 
+Like most of the previous games, it focuses on having the best score. 
+There is 3 different kind of collectibles for this:
+ - Coin (10 points): can be anywhere in a cave section, will lead to a safe path.
+It will be destroyed in contact of the spaceship laser
+ - Diamond (150 points): only spawn above a cave block (with 1/16 chance)
+ - Gem: found in harder to reach places in cave section. There is 6 different gems that can spawn:
+   - Blue Sapphire (200 points): 50/182 chance
+   - Red Ruby (250 points): 40/182 chance
+   - Purple Pearl (300 points): 40/182 chance
+   - Green Emerald (400 points): 30/182 chance
+   - Gray Diamond (500 points): 20/182 chance
+   - Multicolor Opal (1000 points): 2/182 chance
+
 From a game design point of view, I had this idea of different cave section chosen randomly with a 
 same start/ending for a smooth transition.
 There is a total of 10 different caves (with one unfinished and unused) chosen randomly.
@@ -29,4 +42,5 @@ Basically there is a hidden vertical bar that follow the spaceship vertically an
 whenever the spaceship touch it which increase the distance.
 {% comment %}TODO: add a gif of the distance mechanic {% endcomment %}
 
-{% comment %}TODO: write regarding hidden blocks (same idea as Smiley Adventure) {% endcomment %}
+Some blocks are a bit lighter, similar to [Smiley Adventure]({% post_url 2011-12-12-smiley-adventure %}) 
+where touching this blocks will destroy them, here you simply go through it which can lead you to secret path with gems

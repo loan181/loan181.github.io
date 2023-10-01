@@ -166,6 +166,24 @@
 # 13 - Spaceship Escape
 - folder-name: 13-spaceship-escape
   pictures:
+    - file: gameplay0.jpg
+      caption-title: Gameplay 1
+    - file: gameplay1.jpg
+      caption-title: Gameplay 2
+    - file: gameplay2.jpg
+      caption-title: Gameplay 3
+      caption-desc: Broken blocks can be destroyed by lasers to open new path
+    - file: gameplay3.jpg
+      caption-title: Gameplay 4
+      caption-desc: Coins indicated safest path to follows
+    - file: gameplay4.jpg
+      caption-title: Gameplay 5
+      caption-desc: The spaceship can go through lighter (fake) blocks
+    - file: gameplay5.jpg
+      caption-title: Gameplay 6
+    - file: gameplay6.jpg
+      caption-title: Gameplay 7
+      caption-desc: Did you notice the secret path below ?
     - file: cave-default.jpg
       caption-title: Cave Section Template
       caption-desc: Was duplicated for creating the other cave sections. Notice that it starts and ends the same
