@@ -1,10 +1,15 @@
 
-<button id="gm-play-btn" onclick="loadGame()" type="button" class="btn btn-primary btn-lg">
-  <i class="fa-solid fa-play"></i> <span>Try Demo</span>
-</button>
-<a id="gm-play-dedicated-btn" role="button" class="btn btn-secondary btn-lg" href="{{ game_path }}" target="_blank">
-  <i class="fa-solid fa-up-right-from-square"></i> Play in dedicated window
-</a>
+<div>
+  <button id="gm-play-btn" onclick="loadGame()" type="button" class="btn btn-primary btn-lg">
+    <i class="fa-solid fa-play"></i> <span>Try Demo</span>
+  </button>
+  <button id="gm-stop-btn" onclick="unloadGame()" type="button" class="btn btn-danger btn-lg d-none">
+    <i class="fa-solid fa-power-off"></i> <span>Stop Demo</span>
+  </button>
+  <a id="gm-play-dedicated-btn" role="button" class="btn btn-secondary btn-lg" href="{{ game_path }}" target="_blank">
+    <i class="fa-solid fa-up-right-from-square"></i> Play in dedicated window
+  </a>
+</div>
 
 <div id="gm-content-div" hidden>
   <iframe
@@ -13,32 +18,49 @@
   </iframe>
 </div>
 
-{% comment %}
-TODO: hide the info as long as the game didn't load.
-{% endcomment %}
-
+{% comment %} /!\: The info  below can't be put in a div, otherwise it broke the intended blockquote {% endcomment %}
 > This demo is a more recent adaptation to be embedded on the website.
 Some features were removed to adapt with this format.
-{: .prompt-info }
+{: .prompt-info .gm-demo-info .d-none }
 
 <script>
-  const gmContent = document.getElementById('gm-content-div');
-  const gmIframe = document.getElementById('gm-game-iframe');
-  const gmPlayButton = document.getElementById('gm-play-btn');
-  const gmPlayButtonIcn = document.querySelector('#gm-play-btn i');
-  const gmPlayButtonText = document.querySelector('#gm-play-btn span');
+  {
+    const gmContent = document.getElementById('gm-content-div');
+    const gmIframe = document.getElementById('gm-game-iframe');
 
-  function loadGame() {
-    gmContent.removeAttribute('hidden');
+    const gmPlayButton = document.getElementById('gm-play-btn');
+    const gmPlayButtonIcn = document.querySelector('#gm-play-btn i');
+    const gmPlayButtonText = document.querySelector('#gm-play-btn span');
+
+    const gmStopButton = document.getElementById('gm-stop-btn');
+
+    const gmDemoInfo = document.getElementsByClassName('gm-demo-info')[0];
 
     gmIframe.width = {{ include.width | default: 640 }};
     gmIframe.height = {{ include.height | default: 480 }};
-    gmIframe.src = gmIframe.dataset.src;
 
-    gmPlayButtonIcn.classList.remove('fa-play');
-    gmPlayButtonIcn.classList.add('fa-arrows-rotate');
-    gmPlayButtonText.innerText = 'Reset Demo';
-    gmPlayButton.classList.remove('btn-primary');
-    gmPlayButton.classList.add('btn-warning');
+    function loadGame() {
+      gmContent.removeAttribute('hidden');
+      gmIframe.src = gmIframe.dataset.src;
+
+      gmPlayButtonIcn.classList.replace('fa-play', 'fa-arrows-rotate');
+      gmPlayButtonText.innerText = 'Reset Demo';
+      gmPlayButton.classList.replace('btn-primary', 'btn-warning');
+
+      gmStopButton.classList.remove('d-none');
+      gmDemoInfo.classList.remove('d-none');
+    }
+
+    function unloadGame() {
+      gmContent.setAttribute('hidden', '');
+      gmIframe.src = "about:blank";
+
+      gmPlayButtonIcn.classList.replace('fa-arrows-rotate', 'fa-play');
+      gmPlayButtonText.innerText = 'Try Demo';
+      gmPlayButton.classList.replace('btn-warning', 'btn-primary');
+
+      gmStopButton.classList.add('d-none');
+      gmDemoInfo.classList.add('d-none');
+    }
   }
 </script>
