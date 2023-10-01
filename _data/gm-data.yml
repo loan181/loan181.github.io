@@ -165,6 +165,12 @@
 
 # 13 - Spaceship Escape
 - folder-name: 13-spaceship-escape
+  controls:
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) / <i class="fa-regular fa-keyboard"></i> Up Arrow Keys -> Move the spaceship up
+    - <i class="fa-regular fa-keyboard"></i> Down Arrow Key -> Move the spaceship down
+    - <i class="fa-regular fa-keyboard"></i> Space -> Shoot laser (touch the button on the top right on mobile)
+    - <i class="fa-regular fa-keyboard"></i> S -> Toggle the sound
+    - <i class="fa-regular fa-keyboard"></i> R -> Restart
   pictures:
     - file: gameplay0.jpg
       caption-title: Gameplay 1

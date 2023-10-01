@@ -40,7 +40,12 @@ There is a total of 10 different caves (with one unfinished and unused) chosen r
 Another system that I was pretty proud of is the mechanic to calculate the distance travelled.
 Basically there is a hidden vertical bar that follow the spaceship vertically and move backward
 whenever the spaceship touch it which increase the distance.
-{% comment %}TODO: add a gif of the distance mechanic {% endcomment %}
+
+![Spaceship distance system gif](/assets/gm-games/{{ gm_info.folder-name }}/img/anim-distance.gif)
 
 Some blocks are a bit lighter, similar to [Smiley Adventure]({% post_url 2011-12-12-smiley-adventure %}) 
 where touching this blocks will destroy them, here you simply go through it which can lead you to secret path with gems
+
+I also add a complex system of "deactivation".
+Some objects such as coins are deactivated when outside the camera view to avoid using too much resources.
+My first step towards optimisation in my games.
