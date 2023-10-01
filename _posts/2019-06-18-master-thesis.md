@@ -8,9 +8,10 @@ pin: true
 ---
 
 Website introducing machine learning (artificial intelligence) concepts.
-Subject of my master thesis, the public was young students without specific computer science background.
+Subject of my master thesis, the targeted public was young students without specific computer science knowledge.
 
-The website link is: <https://loan181.github.io/master-thesis-website-ia-introduction/>
+The website link is: 
+## <https://loan181.github.io/master-thesis-website-ia-introduction/>
 
 The master thesis report is also publicly available at:
 <https://dial.uclouvain.be/memoire/ucl/object/thesis:19484>
