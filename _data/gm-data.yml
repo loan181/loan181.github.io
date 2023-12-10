@@ -217,3 +217,78 @@
 
 # 14 - Nico
 - folder-name: 14-nico
+
+# 15 - Gems Adventure
+- folder-name: 15-gems-adventure
+  controls:
+    - <i class="fa-regular fa-keyboard"></i> Arrows -> Move
+    - <i class="fa-regular fa-keyboard"></i> Space -> Use the hookshot
+    - <i class="fa-regular fa-keyboard"></i> Alt -> Shoot with the gun
+    - <i class="fa-regular fa-keyboard"></i> M -> Go back to the menu
+    - <i class="fa-regular fa-keyboard"></i> S / O -> Save / Load (do not work on browser)
+    - <i class="fa-regular fa-keyboard"></i> T -> Enter a cheat code
+    - plus vite! -> Modify the speed of your character (3 by default)
+    - collision off / pas de collisions -> Disable collisions with most obstacles
+    - collision on -> Enable the collision
+    - je veux le grappin! / grappin -> grant the hookshot
+    - je veux le flingue! / flingue -> grant the gun
+    - mega vue" -> extend the camera view
+    - annuler mega vue -> reset the camera view to default value
+    - suivante! -> go to the next Flipswitch puzzle room
+    - j'aime pas les dalles! -> skip the entire Flipswitch puzzle rooms
+  pictures:
+    - file: loading.jpg
+      caption-title: Custom loading screen
+    - file: menu-1.jpg
+      caption-title: Menu
+      caption-desc: If you wait long enough, the character will start to move randomly
+    - file: intro-1.jpg
+      caption-title: Introduction
+    - file: game-start.jpg
+      caption-title: Gameplay
+      caption-desc: Welcomed text that slowly scroll upward
+    - file: game2.jpg
+      caption-title: Gameplay
+      caption-desc: You can move freely horizontally
+    - file: game3.jpg
+      caption-title: Gameplay
+      caption-desc: Some strange statues prevent you to have the gems
+    - file: game6.jpg
+      caption-title: Gameplay
+      caption-desc: A strange portal is on the ground... I wonder what happen if I touch it ?
+    - file: game7.jpg
+      caption-title: Gameplay
+      caption-desc: I am trapped in the flipswitch puzzle room! I have to walk on each switch once without leaving
+    - file: game8.jpg
+      caption-title: Gameplay
+      caption-desc: Flipswitch turned green when walking on them but red when activated twice (which reset the puzzle)
+    - file: game9.jpg
+      caption-title: Gameplay
+      caption-desc: Finally done with it! I found the hookshot!!
+    - file: game10.jpg
+      caption-title: Gameplay
+      caption-desc: With the hookshot I can reach further places by grabbing to some objects
+    - file: game11.jpg
+      caption-title: Gameplay
+      caption-desc: With it, I can reach the gun place at the bottom left
+    - file: game12.jpg
+      caption-title: Gameplay
+      caption-desc: With it, I can destroy the statues. Time to go back at the stating point!
+    - file: game4.jpg
+      caption-title: Gameplay
+      caption-desc: Lighter walls are fake! You can go through them
+    - file: game5.jpg
+      caption-title: Gameplay
+      caption-desc: Collecting a gems have a nice little animation with red sparkles
+    - file: flipswitch-room-1.jpg
+      caption-title: First flipswitch puzzle room
+    - file: flipswitch-room-2.jpg
+      caption-title: Second flipswitch puzzle room
+    - file: flipswitch-room-3.jpg
+      caption-title: Third flipswitch puzzle room
+    - file: flipswitch-room-4.jpg
+      caption-title: Fourth flipswitch puzzle room
+    - file: flipswitch-room-5.jpg
+      caption-title: Fifth flipswitch puzzle room
+    - file: underground-map.png
+      caption-title: Map (spoiler)
