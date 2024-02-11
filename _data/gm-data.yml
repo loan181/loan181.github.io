@@ -292,3 +292,10 @@
       caption-title: Fifth flipswitch puzzle room
     - file: underground-map.png
       caption-title: Map (spoiler)
+
+# 16 - Red Evasion
+- folder-name: 16-red-evasion
+  pictures:
+    - file: red-evasion-gameplay.gif
+      caption-title: Demo (gif)
+      caption-desc: Preview of the game
