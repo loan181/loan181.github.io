@@ -302,3 +302,44 @@
 
 # 17 - Tanks tanks attack
 - folder-name: 17-tank-tank-attack
+  controls:
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) -> Choose a map
+    - <i class="fa-regular fa-keyboard"></i> Arrows Key -> Move (green tank)
+    - <i class="fa-regular fa-keyboard"></i> Numpad 0 -> Shoot (green tank)
+    - <i class="fa-regular fa-keyboard"></i> Z / Q / S / D -> Move (blue tank)
+    - <i class="fa-regular fa-keyboard"></i> Space -> Shoot (blue tank)
+    - <i class="fa-regular fa-keyboard"></i> Space -> Shoot laser (touch the button on the top right on mobile)
+    - <i class="fa-regular fa-keyboard"></i> R -> Restart
+    - <i class="fa-regular fa-keyboard"></i> M -> Go back to the menu
+    - <i class="fa-regular fa-keyboard"></i> Shift -> Go to the next map
+  pictures:
+    - file: tank-tank-attack-gameplay.gif
+      caption-title: Demo (gif)
+      caption-desc: Preview of the game using different bonus and levels
+    - file: map-1.png
+      caption-title: Map 1 "Classical"
+      caption-desc: Simple map with simple walls and water
+    - file: map-2.png
+      caption-title: Map 2 "Pipe Plaza"
+      caption-desc: In reference to the Mario Kart track
+    - file: map-3.png
+      caption-title: Map 3 "Boing"
+      caption-desc: Map with bouncing blocks
+    - file: map-4.jpg
+      caption-title: Map 4 "Forest"
+      caption-desc: Map with trees to hide under
+    - file: map-5.png
+      caption-title: Map 5 "Death island"
+    - file: map-6.png
+      caption-title: Map 6 "Leaks"
+    - file: map-7.jpg
+      caption-title: Map 7 "Bunker"
+      caption-desc: Map with boxes and brick walls
+    - file: map-8.jpg
+      caption-title: Map 8 "Dark rendez-vous"
+      caption-desc: Map with a dungeon to hide inside with hole in the roof to see the tank
+    - file: map-9.jpg
+      caption-title: Map 9 "Double protection"
+    - file: map-10.jpg
+      caption-title: Map 10 "Mix"
+      caption-desc: Mix of different obstacles
