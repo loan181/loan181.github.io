@@ -72,5 +72,6 @@ It can also finish the game if the player is between 2 pushers of opposite direc
 #### Wave: Boss (unfinished)
 
 A boss was originally planned. A big circle shape with a face that have different emotions depending on the player actions.
-This boss would have randomly shoot raining projectiles and would have move in a horizontal pattern.
+This boss shoot raining projectiles randomly and move in a horizontal pattern.
 My first idea was to give the player a weapon to attack the boss and give a score bonus once killed.
+The idea was dropped at the end as too complicated to implement and don't really see the point of it compare to the rest of the game

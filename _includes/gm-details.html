@@ -31,6 +31,18 @@
   </div>
 {% endif %}
 
+{% comment %} Video section {% endcomment %}
+{% if game_info.youtube-id %}
+  <h2 id="title-video-demo">Video
+    <a class="text-muted anchor" data-bs-toggle="collapse" href="#gm-video" role="button" aria-expanded="true" aria-controls="gm-video">
+      <i class="fa-solid fa-eye-slash"></i>
+    </a>
+  </h2>
+  <div id="gm-video" class="collapse">
+    {% include embed/youtube.html id=game_info.youtube-id %}
+  </div>
+{% endif %}
+
 {% comment %} Galery section {% endcomment %}
 {% if game_info.pictures %}
   <h2 id="title-gallery">Gallery
@@ -41,7 +53,6 @@
   {% assign gm_info = game_info %}
   {% assign gm_screens_len = gm_info.pictures.size %}
   {% assign gm_screens_len_dec = gm_screens_len | minus: 1 %}
-
 
   {% include gm-gallery.html %}
 {% endif %}
