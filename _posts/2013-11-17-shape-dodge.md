@@ -23,42 +23,42 @@ The neon inspiration come from this style which was popular in Happy Wheels that
 The game is composed of successive waves on which various shapes with a given pattern will harm the player.
 Each wave last a different amount of time and will smoothly switch to another one randomly.
 
-#### Wave: Balls
+#### Wave: Balls (1)
 
 Default wave when the game started, balls shape will randomly appear from the left moving to the right and bounce.
 Deal 1 damage per frame in contact with the player.
 
-#### Wave: Lasers
+#### Wave: Lasers (2)
 
 Laser beam falling from the top and disappear in contact with the ground
 Deal 0.05 damage per frame in contact with one laser beam
 
-#### Wave: Blocks
+#### Wave: Blocks (3)
 
 Blocks will fall from the sky staying on the ground and can stack on each other.
 They do not harm the player directly, but they can crush him which will instantly finish the game
 
-#### Wave: Rain
+#### Wave: Rain (4)
 
 Little droplets will fall from the sky in random directions.
 Each droplet deal 10 damage
 
-#### Wave: Spiral / Dark hole
+#### Wave: Spiral / Dark hole (5)
 
 Spiral moving spike shapes will move back and forth horizontally in the game
 Deal 2 damage per frame in contact with the spike
 
-#### Wave: Shuriken
+#### Wave: Shuriken (6)
 
 Shurikens will move horizontally hitting the player on contact.
 Deal 20 damage per shuriken hit
 
-#### Wave: Zone
+#### Wave: Zone (7)
 
 Circle growing zone will appear randomly in the screen then disappear.
 Deal 0.5 damage per frame in one zone
 
-#### Wave: Missiles
+#### Wave: Missiles (8)
 
 Missiles will appear on the side and top provoking explosions on contact with anything else.
 While they are quicker than shurikens, a warning sign appear on the side where it will appear. 

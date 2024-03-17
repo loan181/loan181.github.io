@@ -1,11 +1,13 @@
 # 1 - Smiley Adventure
 - folder-name: 1-smiley-adventure
+  youtube-id: -EV6yXZCgas
   controls:
     - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) -> Navigate in the menu
     - <i class="fa-regular fa-keyboard"></i> arrow keys -> Move the character
 
 # 2 - Dungeon and dragons
 - folder-name: 2-dungeon-and-dragon
+  youtube-id: f5M4BLtojPg
   pictures:
   - file:           screen1.png
     caption-title:  title screen
@@ -347,3 +349,22 @@
 # 18 - Shape Dodge
 - folder-name: 18-shape-dodge
   youtube-id: L0JKkXjnxCo
+  controls:
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) left / <i class="fa-regular fa-keyboard"></i> Left Key -> Move left
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) right / <i class="fa-regular fa-keyboard"></i> Right Key -> Move right
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) top / <i class="fa-regular fa-keyboard"></i> Up Key -> Jump (or double jump if already jumping)
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) bottom / <i class="fa-regular fa-keyboard"></i> Down Key -> Duck
+    - <i class="fa-regular fa-keyboard"></i> Space -> Speed up the game
+    - <i class="fa-regular fa-keyboard"></i> Numpad 0 -> Cut short the current wave and start shortly after a new random one
+    - <i class="fa-regular fa-keyboard"></i> Numpad 1 - 8 -> Force a wave to trigger (see index of wave below)
+
+- folder-name: 19-rotation
+  youtube-id: BNTMFud6VAg
+  controls:
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) -> Choose level (in the menu)
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) left / <i class="fa-regular fa-keyboard"></i> Left Key -> Rotate clockwise
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) right / <i class="fa-regular fa-keyboard"></i> Right Key -> Rotate counter-clockwise
+    - <i class="fa-regular fa-keyboard"></i> Up/Down Key -> Rotate 180°
+    - <i class="fa-regular fa-keyboard"></i> R -> Restart the level
+    - <i class="fa-regular fa-keyboard"></i> Ctrl -> Go to the next level
+    - <i class="fa-regular fa-keyboard"></i> Alt -> Go to the previous level
