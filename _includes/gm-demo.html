@@ -12,10 +12,14 @@
 </div>
 
 <div id="gm-content-div" hidden>
-  <iframe
-    id="gm-game-iframe" scrolling="no" frameborder="0"
-    data-src="{{ game_path }}" src="about:blank">
-  </iframe>
+  <label for="gm-zoom-slider" class="form-label"><i class="fa-solid fa-magnifying-glass"></i> Zoom</label>
+  <input type="range" class="form-range" min="0.25" max="2" step="0.05" id="gm-zoom-slider" value="1.0" onchange="zoomGame(this.value)">
+  <div id="gm-game-div">
+    <iframe
+      id="gm-game-iframe" scrolling="no" frameborder="0"
+      data-src="{{ game_path }}" src="about:blank">
+    </iframe>
+  </div>
 </div>
 
 {% comment %} /!\: The info  below can't be put in a div, otherwise it broke the intended blockquote {% endcomment %}
@@ -27,6 +31,7 @@ Some features were removed to adapt with this format.
   {
     const gmContent = document.getElementById('gm-content-div');
     const gmIframe = document.getElementById('gm-game-iframe');
+    const gmDiv = document.getElementById('gm-game-div');
 
     const gmPlayButton = document.getElementById('gm-play-btn');
     const gmPlayButtonIcn = document.querySelector('#gm-play-btn i');
@@ -36,8 +41,10 @@ Some features were removed to adapt with this format.
 
     const gmDemoInfo = document.getElementsByClassName('gm-demo-info')[0];
 
-    gmIframe.width = {{ include.width | default: 640 }};
-    gmIframe.height = {{ include.height | default: 480 }};
+    const gameWidth = {{ include.width | default: 640 }};
+    const gameHeight = {{ include.height | default: 480 }};
+    gmIframe.width = gameWidth;
+    gmIframe.height = gameHeight;
 
     function loadGame() {
       gmContent.removeAttribute('hidden');
@@ -61,6 +68,21 @@ Some features were removed to adapt with this format.
 
       gmStopButton.classList.add('d-none');
       gmDemoInfo.classList.add('d-none');
+    }
+
+    function zoomGame(zoom_ratio) {
+      const css_text = `
+        -ms-zoom: ${zoom_ratio};
+        -moz-transform': scale(${zoom_ratio});
+        -moz-transform-origin: 0 0;
+        -o-transform: scale(${zoom_ratio});
+        -o-transform-origin: 0 0;
+        -webkit-transform: scale(${zoom_ratio});
+        -webkit-transform-origin: 0 0;
+      `;
+      gmIframe.setAttribute("style", css_text);
+      // Zooming the iframe, does NOT change the element actual size. So we modify the parent div manually
+      gmDiv.setAttribute("style", `width: ${gameWidth * zoom_ratio}px; height: ${gameHeight * zoom_ratio}px;`)
     }
   }
 </script>
