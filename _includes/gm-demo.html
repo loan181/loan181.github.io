@@ -81,7 +81,7 @@ Some features were removed to adapt with this format.
         -webkit-transform-origin: 0 0;
       `;
       gmIframe.setAttribute("style", css_text);
-      // Zooming the iframe, does NOT change the element actual size. So we modify the parent div manually
+      /* Zooming the iframe, does NOT change the element actual size. So we modify the parent div manually */
       gmDiv.setAttribute("style", `width: ${gameWidth * zoom_ratio}px; height: ${gameHeight * zoom_ratio}px;`)
     }
   }
