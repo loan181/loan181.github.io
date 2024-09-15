@@ -358,6 +358,7 @@
     - <i class="fa-regular fa-keyboard"></i> Numpad 0 -> Cut short the current wave and start shortly after a new random one
     - <i class="fa-regular fa-keyboard"></i> Numpad 1 - 8 -> Force a wave to trigger (see index of wave below)
 
+# 19 - Rotation
 - folder-name: 19-rotation
   youtube-id: BNTMFud6VAg
   controls:
@@ -368,3 +369,9 @@
     - <i class="fa-regular fa-keyboard"></i> R -> Restart the level
     - <i class="fa-regular fa-keyboard"></i> Ctrl -> Go to the next level
     - <i class="fa-regular fa-keyboard"></i> Alt -> Go to the previous level
+
+# 20 - Dig
+- folder-name: 20-dig
+  controls:
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) -> Interact with the menu and dig block (if close enough from player)
+    - <i class="fa-solid fa-computer-mouse"></i> mouse (or touch) left / <i class="fa-regular
